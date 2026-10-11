@@ -99,13 +99,13 @@ export const DashboardPage = () => {
             <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`} />
           </Button>
           <Button
-            variant="primary"
+            variant="lightPrimary"
             onClick={() => setIsModalOpen(true)}
-            className="bg-white text-indigo-700 hover:bg-indigo-50 border-0 font-bold shadow-lg shadow-black/10"
+            className="border-0 font-bold shadow-lg shadow-black/10"
             icon={Plus}
-          >
-            Schedule Plan
-          </Button>
+  >
+  Schedule Plan
+</Button>
         </div>
       </div>
 

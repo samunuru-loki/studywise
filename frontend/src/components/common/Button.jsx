@@ -6,6 +6,9 @@ const variants = {
   danger: 'bg-rose-600 hover:bg-rose-700 text-white shadow-sm focus-visible:ring-rose-500',
   ghost: 'bg-transparent hover:bg-slate-100 text-slate-600 hover:text-slate-900 focus-visible:ring-slate-400',
   success: 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm focus-visible:ring-emerald-500',
+
+  // White button with indigo text
+  lightPrimary: 'bg-white hover:bg-indigo-50 text-indigo-700 shadow-lg focus-visible:ring-indigo-500',
 };
 
 const sizes = {
