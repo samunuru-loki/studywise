@@ -7,7 +7,7 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 10000,
+  timeout: 12000,
 });
 
 // Request Interceptor: Attach JWT Token
@@ -38,7 +38,7 @@ api.interceptors.response.use(
         if (currentPath !== '/login' && currentPath !== '/register') {
           localStorage.removeItem('studywise_token');
           localStorage.removeItem('studywise_user');
-          window.location.href = '/login?session_expired=true';
+          window.location.hash = '/login?session_expired=true';
         }
       }
       // Extract error message
